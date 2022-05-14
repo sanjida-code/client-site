@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.display-none{
+  width: 0px;
+  display: none;
+  visibility: hidden;
+}

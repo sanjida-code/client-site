@@ -1,0 +1,73 @@
+[debug] [2022-05-14T17:26:58.182Z] ----------------------------------------------------------------------
+[debug] [2022-05-14T17:26:58.184Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sanmun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-05-14T17:26:58.185Z] CLI Version:   10.9.2
+[debug] [2022-05-14T17:26:58.185Z] Platform:      win32
+[debug] [2022-05-14T17:26:58.185Z] Node Version:  v16.15.0
+[debug] [2022-05-14T17:26:58.186Z] Time:          Sat May 14 2022 23:26:58 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-14T17:26:58.187Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-14T17:26:58.263Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-14T17:26:58.263Z] > authorizing via signed-in user (sanjidamun669@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\project\class-list-client
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-14T17:27:07.062Z] Using project from CLI flag: courselist-8b03a
+[debug] [2022-05-14T17:27:07.065Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/courselist-8b03a [none]
+[debug] [2022-05-14T17:27:07.669Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/courselist-8b03a 403
+[debug] [2022-05-14T17:27:07.669Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/courselist-8b03a {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-05-14T17:27:07.670Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-05-14T17:27:08.240Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\sanmun\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\sanmun\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project courselist-8b03a. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-05-14T17:27:45.245Z] ----------------------------------------------------------------------
+[debug] [2022-05-14T17:27:45.247Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sanmun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-14T17:27:45.248Z] CLI Version:   10.9.2
+[debug] [2022-05-14T17:27:45.248Z] Platform:      win32
+[debug] [2022-05-14T17:27:45.248Z] Node Version:  v16.15.0
+[debug] [2022-05-14T17:27:45.249Z] Time:          Sat May 14 2022 23:27:45 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-14T17:27:45.250Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-14T17:27:45.327Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-14T17:27:45.328Z] > authorizing via signed-in user (sanjidamun669@gmail.com)
+[debug] [2022-05-14T17:27:45.328Z] [iam] checking project courselist-8b03a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-14T17:27:45.330Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/courselist-8b03a:testIamPermissions [none]
+[debug] [2022-05-14T17:27:45.331Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/courselist-8b03a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-14T17:27:47.097Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/courselist-8b03a:testIamPermissions 200
+[debug] [2022-05-14T17:27:47.097Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/courselist-8b03a:testIamPermissions {}
+[debug] [2022-05-14T17:27:47.098Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project courselist-8b03a:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-05-14T17:27:47.099Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/courselist-8b03a [none]
+[debug] [2022-05-14T17:27:47.649Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/courselist-8b03a 403
+[debug] [2022-05-14T17:27:47.649Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/courselist-8b03a {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-05-14T17:27:47.650Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-05-14T17:27:51.104Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\sanmun\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\sanmun\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project courselist-8b03a. Please make sure the project exists and your account has permission to access it.
